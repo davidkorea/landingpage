@@ -6,17 +6,17 @@
     <link rel="stylesheet" href="css/semantic.css">
   </head>
   <body>
-    <div class="ui fixed inverted menu">
-      <!-- fixed 保证菜单遮住大图的边框，解决大图无法置顶，滚动页面时，菜单固定在最上端 -->
-      <a href="#" class="item">Home</a>
-      <a href="#" class="item">About</a>
-      <a href="#" class="item">Other</a>
-
-    </div>
 
     <div class="ui vertical basic segment">
     <!-- 不使用inverted保证与下面的div连接时没有大图黑框，同时上下相邻都需要basic segment -->
+      <div class="ui inverted menu">
+        <!-- 菜单在大图里面 -->
+        <div class="ui image">
+          <img src="images/tenlogo.png" alt="">
+        </div>
+      </div>
       <div class="ui image">
+        <!-- 需要删除这个死标签，将大图移动至最外层div的背景 -->
         <img src="images/banner.jpg" alt="">
       </div>
     </div>
