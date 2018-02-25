@@ -27,6 +27,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+/* absolute 会使得占位消失 */
 
 .ui.red.circular.button {
   font-size: 20px;
@@ -53,4 +54,70 @@
 
 #card-title {
   margin-bottom: 100px;
+}
+
+#people-say {
+  height: 450px;
+  background: url('../images/people-say.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 100px;
+}
+/* margin-bottom: 100px;使得按钮与footer间隔开 */
+
+.four.wide.column {
+  position: absolute;
+}
+
+.ui.circular.inverted.segment {
+  background: url('../images/profile.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 120px;
+  width: 120px;
+  /*==========*/
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* 为了让头像在每一列处于居中位置，需要其父结构的position: absolute或者relative */
+  /*==========*/
+}
+
+#people-say > .ui.grid {
+  position: relative;
+  top: 40%;
+}
+/*
+  1.为了让四个头像所在的列剧中在红色背景
+  ##############
+  2.因为父级结构#people-say有固定高度，所以此处用relative有作用，否则无效
+  ##############
+*/
+
+.ui.circular.inverted.segment > .ui.inverted.header {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+}
+
+.icon.red.inverted.circular {
+  position: absolute;
+  transform: translate(-100%, -100%);
+  top: 100%;
+  left: 100%;
+}
+/* transform: translate(-100%, -100%)转移重心至右下角
+  每次通过top，left移动的是重心的位置
+*/
+
+/* #people-say > .ui.red.inverted.circular.button { */
+.ui.red.inverted.circular.button {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  /* margin-bottom: 50px; */
 }
