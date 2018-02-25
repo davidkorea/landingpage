@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>landing page</title>
+    <link rel="stylesheet" href="css/semantic.css">
+  </head>
+  <body>
+    <div class="ui fixed inverted menu">
+      <!-- fixed 保证菜单遮住大图的边框，解决大图无法置顶，滚动页面时，菜单固定在最上端 -->
+      <a href="#" class="item">Home</a>
+      <a href="#" class="item">About</a>
+      <a href="#" class="item">Other</a>
+
+    </div>
+
+    <div class="ui vertical basic segment">
+    <!-- 不使用inverted保证与下面的div连接时没有大图黑框，同时上下相邻都需要basic segment -->
+      <div class="ui image">
+        <img src="images/banner.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="ui vertical basic container segment">
+      <!-- 使用网格系统 默认16栏， 定宽网格-->
+      <div class="ui grid">
+        <div class="ten wide column">
+          <div class="ui image">
+            <img src="images/devices2.png" alt="">
+          </div>
+        </div>
+        <div class="six wide column">
+          <h2 class="ui header">
+            <i class="icon star"></i>
+            This is title
+          </h2>
+          <p>hsdkf hhsdkf hhsdkf hhsdkf hhsdkf hhsdkf hhsdkf hhsdkf hhsdkf hhsdkf hhsdkf hhsdkf h</p>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="ui vertical very padded inverted segment">
+      <!-- very padded 使元素往里收 -->
+      <div class="ui grid">
+        <div class="four wide column">
+          <div class="ui vertical inverted text menu">
+            <div class="ui inverted header">
+              hehe
+            </div>
+            <i class="item">aaa</i>
+            <i class="item">aaa</i>
+            <i class="item">aaa</i>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
