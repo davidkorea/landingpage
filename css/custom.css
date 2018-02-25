@@ -1,7 +1,7 @@
 .ui.vertical.basic.segment.masthead {
   height: 700px;
   background: url('../images/banner.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   padding-left: 40px;
   padding-right: 40px;
@@ -37,4 +37,20 @@
 .ui.header.footer.logo {
   font-size: 30px;
   color: rgb(196,196,196);
+}
+
+.ui.inverted.segment.card-view {
+  height: 220px;
+}
+
+.ui.vertical.basic.container.segment.recommanded > .ui.center.aligned.header {
+  font-size: 36px;
+  color: rgba(56, 56, 56, 0.9);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+/* 子孙选择器 */
+
+#card-title {
+  margin-bottom: 100px;
 }
