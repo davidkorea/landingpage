@@ -19,3 +19,17 @@
   4. padding 使得顶端菜单内收
     此处只是div背内部的元素内收，而不是背景图片内收
 */
+
+.ui.inverted.center.aligned.header.slogan {
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ui.red.circular.button {
+  font-size: 20px;
+  width: 180px;
+  height: 50px;
+}
