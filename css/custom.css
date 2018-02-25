@@ -3,6 +3,8 @@
   background: url('../images/banner.png');
   background-size: contain;
   background-repeat: no-repeat;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 /*
   1.连续 ctrl/command+D 选择所有空格换成 .
@@ -14,4 +16,6 @@
     contain:图片自身的宽高比不变，缩放至图片自身能完全显示出来，所以容器会有留白区域；
     PS:其实，从英文的意思来说：cover意味着“遮罩、遮盖”---此处理解为“塞满”较恰当，contain意为“包含”--也就是：我图片虽然缩放了，但是整个图是被“包含”在你里面的，你必须把我显示完整、不能裁剪我一丝一毫~
     在repeat情况下：cover:与上述相同；contain:容器内至少有一张完整的图，容器留白区域则平铺背景图，铺不下的再裁掉。
+  4. padding 使得顶端菜单内收
+    此处只是div背内部的元素内收，而不是背景图片内收
 */
