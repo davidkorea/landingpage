@@ -33,3 +33,8 @@
   width: 180px;
   height: 50px;
 }
+
+.ui.header.footer.logo {
+  font-size: 30px;
+  color: rgb(196,196,196);
+}
