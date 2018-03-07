@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/semantic.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Raleway">
+    <style type="text/css">
+        body {
+            background: url('images/back2.jpg');
+            background-size: cover;
+        }
+
+        .ui.grid.divided.segment.container{
+            min-height: 400px;
+            width:600px !important;
+            border:rgba(255, 0, 0, 0);
+            position: absolute;
+            left: 50%;
+            top:40%;
+            transform: translate(-50%,-50%);
+        }
+
+        .five.wide.column {
+            background: url('images/berries-1546125__340.jpg');
+            background-size: cover;
+            background-position: 60% 0%;
+        }
+
+        form {
+            margin-top: 60px;
+        }
+        h1,h3,h4{
+            font-family: 'Play', sans-serif !important;
+
+        }
+    </style>
+  </head>
+  <body>
+    <div class="ui grid divided segment container">
+      <div class="five wide column">
+        <h4 class="ui inverted header">
+          <i class="angle left icon"></i>
+        </h4>
+        <h1 class="ui inverted center aligned header" style="font-size:40px;margin-top:55px">
+          <p class="sub header">Welcome to</p>10MINS
+        </h1>
+      </div>
+      <div class="eleven wide column" style="background-color:rgba(255,100,100,0.2)">
+        <h4 class="ui inverted right aligned header">
+          <a href="#" style="color:#ff695e;">or LOGIN</a>
+        </h4>
+
+        <form class="ui form error" method="post">
+          <div class="field">
+            <label for="">id</label>
+            <input type="text" placeholder="user id/email" name="" value="">
+          </div>
+          <div class="field">
+            <label for="">password</label>
+            <input type="password" placeholder="********"name="" value="">
+          </div>
+          <button type="submit" class="ui inverted red circular right floated button"name="button">submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
